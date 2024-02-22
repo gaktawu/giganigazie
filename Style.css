@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+}
+.nav a{
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    animation: slideTop .5s ease forwards;
+    opacity: 0;
+}
+.nav a:hover,nav a.active{
+    color: #ef6e12;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home .home-detail{
+    max-width: 600px;
+}
+.home-detail h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+span{
+    color: #ef6e12;
+}
+.home-detail h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-detail p{
+    font-size: 16px;
+}
+
+.home-detail .social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ef6e12;
+    border-radius: 50%;
+    color: #ef6e12;
+    background: transparent;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    font-size: 30px;
+}
+.social-media a:hover{
+    background: #ef6e12;
+    color: black;
+    box-shadow:0 0 20px #ef6e12;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ef6e12;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #000;
+    color: #ef6e12;
+    border: 1px solid #ef6e12;
+
+
+}
+img{
+    width: 450px;
+    margin-right: -20px;
+    animation: slideleft .9s ease forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.coba{
+    position: relative;
+    margin-top: 160px;
+    margin-left: 90px;
+    color: #ef6e12;
+    max-width: 600px;
+}
+
+.coba h1{
+    font-size: 45px;
+    color: #fff;
+
+}
+
+.coba h2{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 24px;
+    color: #ffffff;
+}
+.coba p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    color: #fff;
+    border: 40px;
+}
+.com h1{
+    color: #ef6e12;
+
+}
